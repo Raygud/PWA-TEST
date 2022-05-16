@@ -1,0 +1,25 @@
+{
+    "name": "PWA test RG",
+    "short_name": "RG PWA",
+    "start_url": "/index.html",
+    "background_color": "#6dcdb1",
+    "theme_color": "#009578",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "images/PWA192.png",
+            "sizes": "186x193",
+            "type": "image/png"
+        },
+        {
+            "src": "images/PWA512.png",
+            "sizes": "464x482",
+            "type": "image/png"
+        },
+        {
+            "src": "images/PWAS512.png",
+            "sizes": "514x514",
+            "type": "image/png"
+        }
+    ]
+}

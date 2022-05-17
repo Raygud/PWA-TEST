@@ -25,9 +25,6 @@ function generateRandomIntegerInRange(min, max) {
 
 Generates a random number between x-y would be used as shown below 
 
-```
-rand = generateRandomIntegerInRange(0, 10);
-
-```
+```rand = generateRandomIntegerInRange(0, 10);```
 this will generate a "random" number between 0 and 10(Including both)
 

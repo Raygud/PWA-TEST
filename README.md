@@ -55,3 +55,16 @@ function User(){
 
 3. if the first statement is TRUE and the second statement(Are we on the last index of the Users array?) is TRUE, reset UserTurn to 0(UserTurn = 0) and        then run the "Wheelspin()" function, we are now back to the first player in Users Array.
 
+
+```javascript
+      function AddPlayer(){
+                  Users.push({
+                        Name: UserNameAdd.value ,
+                        Lives: 3,
+                        Mission: null
+                        }
+                    )
+               }
+```
+
+UserNameAdd.value

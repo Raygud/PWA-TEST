@@ -73,4 +73,6 @@ function User(){
 
 **Lives: 3,** Each user starts of with 3 lives(Upon "death" the user must chug his beverage)
 
-**Mission: null** Each player starts with a Mission value of null we will read this value later in the code
+**Mission: null** Each player starts with a Mission value of null we will read this value will be read later on to see if the user currently has a Mission or not.
+
+Users values will be read as follows **Users[UserTurn].Name**/**Users[1].Name/Lives/Mission**

@@ -49,7 +49,7 @@ function User(){
         }
     }
 ```
-First checks if ther are any users in the Users Array, if not then it runs the last else statement prompting the player to add a user,
-if the first statement is TRUE and and the second if statement is FALSE run the "Wheelspin()" function and move on to the next user(UserTurn++)
-if the first statement is TRUE and the second statement(Are we on the last index of the Users array?) is TRUE, reset UserTurn to 0(UserTurn = 0) and then run the "Wheelspin()" function, we are now back to the first player in Users Array.
+1. First checks if ther are any users in the Users Array, if not then it runs the last else statement prompting the player to add a user,
+2. if the first statement is TRUE and and the second if statement is FALSE run the "Wheelspin()" function and move on to the next user(UserTurn++)
+3. if the first statement is TRUE and the second statement(Are we on the last index of the Users array?) is TRUE, reset UserTurn to 0(UserTurn = 0) and        then run the "Wheelspin()" function, we are now back to the first player in Users Array.
 

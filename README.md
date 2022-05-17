@@ -69,6 +69,8 @@ function User(){
                }
 ```
 
-<span style="color:blue">UserNameAdd.value</span> is the value the user puts into the input field when he wants too create a user, we retain this value so that we can display the User name of the player whos turn it is to spin the wheel.
+<span style="color:blue">UserNameAdd.value</span> is the value the user puts into the input field when he wants too create a user, we retain this value so that we can display the User name of the player whos turn it is to spin the wheel.´´´
 
- <span style="color:blue">some *blue* text</span>.
+´´´diff
+hello
+´´´

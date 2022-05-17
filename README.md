@@ -56,6 +56,8 @@ function User(){
 3. if the first statement is TRUE and the second statement(Are we on the last index of the Users array?) is TRUE, reset UserTurn to 0(UserTurn = 0) and        then run the "Wheelspin()" function, we are now back to the first player in Users Array.
 
 
+## Add Players
+
 ```javascript
       function AddPlayer(){
                   Users.push({
@@ -67,4 +69,4 @@ function User(){
                }
 ```
 
-UserNameAdd.value
+<span style="color:blue">UserNameAdd.value</span> is the value the user puts into the input field when he wants too create a user, we retain this value so that we can display the User name of the player whos turn it is to spin the wheel.

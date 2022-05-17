@@ -17,7 +17,7 @@ Each player starts with 3 Chickens/Lives these chickens can be used at the cost 
 
 ## Random Number
 
-```
+```javascript
 function generateRandomIntegerInRange(min, max) {
       return Math.floor(Math.random() * (max - min + 1)) + min;
     }
@@ -32,7 +32,7 @@ this will generate a "random" number between 0 and 10(Including both)
 
 ## Users 
 
-```
+```javascript
 function User(){
     if(Users.length >0){
       if(UserTurn > Users.length-1){

@@ -70,5 +70,7 @@ function User(){
 ```
 
 **UserNameAdd.value** is the value the user puts into the input field when he wants too create a user, we retain this value so that we can display the User name of the player whos turn it is to spin the wheel.
+
 **Lives: 3,** Each user starts of with 3 lives(Upon "death" the user must chug his beverage)
+
 **Mission: null** Each player starts with a Mission value of null we will read this value later in the code

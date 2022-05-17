@@ -25,6 +25,31 @@ function generateRandomIntegerInRange(min, max) {
 
 Generates a random number between x-y would be used as shown below 
 
-```rand = generateRandomIntegerInRange(0, 10);```
+```
+rand = generateRandomIntegerInRange(0, 10);
+```
 this will generate a "random" number between 0 and 10(Including both)
+
+## Users 
+
+```
+function User(){
+    if(Users.length >0){
+      if(UserTurn > Users.length-1){
+            UserTurn = 0
+            WheelSpin(UserTurn)
+      }
+            else{
+                  WheelSpin(UserTurn)
+                  UserTurn++
+                }
+     }
+    else{
+         alert("NO PLAYERS!")
+        }
+    }
+```
+First checks if ther are any users in the Users Array, if not then it runs the last else statement prompting the player to add a user,
+if the first statement is TRUE and and the second if statement is FALSE run the "Wheelspin()" function and move on to the next user(UserTurn++)
+if the first statement is TRUE and the second statement(Are we on the last index of the Users array?) is TRUE, reset UserTurn to 0(UserTurn = 0) and then run the "Wheelspin()" function, we are now back to the first player in Users Array.
 

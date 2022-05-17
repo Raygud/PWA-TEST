@@ -13,6 +13,21 @@ The players are faced with a wheel of fortune(or misfortune), this wheel contain
 
 
 ## Chicken<a name="Chicken"></a> 
-Each player starts with 3 Chickens/Lives these chickens can be used at the cost of one sip of your drink,
+Each player starts with 3 Chickens/Lives these chickens can be used at the cost of one sip of your drink.
 
+## Random Number
+
+```
+function generateRandomIntegerInRange(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+```
+
+Generates a random number between x-y would be used as shown below 
+
+```
+rand = generateRandomIntegerInRange(0, 10);
+
+```
+this will generate a "random" number between 0 and 10(Including both)
 

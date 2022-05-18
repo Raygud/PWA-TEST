@@ -115,7 +115,7 @@ function Chicken(){
     else{
         ChickeSound()
         document.getElementById(`Dead${i}`).style.display = "none"
-        WheelSpin()
+        WheelSpin(UserTurn)
     }
     i++
 }

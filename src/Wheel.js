@@ -105,7 +105,7 @@ fetch(`/${TDR}.json`)
 }
 
 function Chicken(){
-    
+    if(Users.length > 0){
     if(i > 3){
         i = 0
         for(let q = 1;q < 4;q++){
@@ -118,6 +118,10 @@ function Chicken(){
         WheelSpin(UserTurn)
     }
     i++
+}
+else{
+    alert("Not enough players!")
+}
 }
 
 

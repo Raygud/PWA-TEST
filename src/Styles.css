@@ -4,6 +4,8 @@
   text-align: center;
   text-decoration: none;
   border: none;
+  color: white;
+  font-family: HeaderFont;
 }
 
 body {
@@ -50,7 +52,7 @@ body {
 
 #Chikens {
   position: absolute;
-  top: 26vw;
+  top: 5vw;
   right: 1vw;
   width: 55vw;
   height: 10vw;
@@ -59,7 +61,7 @@ body {
 #Message {
   position: absolute;
   left: 5vw;
-  top: 26vw;
+  top: 5vw;
   width: 12vw;
   margin-bottom: 15vw;
   margin-right: 6vw;
@@ -68,7 +70,7 @@ body {
 h1 {
   font-family: HeaderFont;
   font-size: 13vw;
-  margin-top: 5vw;
+  margin-top: 1vw;
   margin-bottom: 2vw;
   color: white;
 }
@@ -77,7 +79,7 @@ h1 {
   position: absolute;
   z-index: 1;
   left: 46vw;
-  top: 47vw;
+  top: 27vw;
   width: 8vw;
   height: 8vw;
   transition: 500ms ease-in-out;
@@ -85,7 +87,7 @@ h1 {
 
 #Wheel {
   position: absolute;
-  top: 47vw;
+  top: 27vw;
   left: 0;
   transform: scale(1.25);
   width: 100vw;
@@ -104,7 +106,7 @@ h1 {
 
 #Buttons {
   position: absolute;
-  bottom: 5vw;
+  bottom: 2vw;
   width: 100vw;
   display: flex;
   justify-content: space-evenly;
@@ -121,12 +123,16 @@ h1 {
   background-color: #e94545;
 }
 
+#PromptContainer {
+  position: absolute;
+  bottom: 24vw;
+}
+
 #Question {
   margin: auto;
   font-family: HeaderFont;
-  font-size: 8vw;
+  font-size: 7vw;
   width: 95%;
-  background-color: aqua;
 }
 
 .Spinner {

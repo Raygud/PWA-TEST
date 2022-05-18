@@ -6,8 +6,12 @@
     border: none;
 }
 
-#GameScreen{
+body{
+    
     background-color: rgb(44, 44, 44);
+}
+
+#GameScreen{
     transition: 5000ms ease-in-out;
     width: 100vw;
     height: 100vh;

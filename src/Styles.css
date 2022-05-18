@@ -49,7 +49,7 @@ body {
 
 #Chikens {
   position: absolute;
-  top: 19vw;
+  top: 26vw;
   right: 1vw;
   width: 55vw;
   height: 10vw;
@@ -58,6 +58,7 @@ body {
 #Message {
   position: absolute;
   left: 5vw;
+  top: 26vw;
   width: 12vw;
   margin-bottom: 15vw;
   margin-right: 6vw;
@@ -75,13 +76,16 @@ h1 {
   position: absolute;
   z-index: 1;
   left: 46vw;
-  top: 42vw;
+  top: 47vw;
   width: 8vw;
   height: 8vw;
   transition: 500ms ease-in-out;
 }
 
 #Wheel {
+  position: absolute;
+  top: 47vw;
+  left: 0;
   transform: scale(1.25);
   width: 100vw;
   transition: 5000ms ease-in-out;
@@ -90,9 +94,9 @@ h1 {
 #Secret {
   position: absolute;
   z-index: 5;
-  width: 80vw;
-  left: 10vw;
-  top: 55vw;
+  width: 60vw;
+  left: 20vw;
+  top: 60vw;
   transition: 500ms ease-in-out;
   transform: scale(0);
 }

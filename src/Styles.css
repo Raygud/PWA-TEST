@@ -48,11 +48,11 @@ body {
 }
 
 #Chikens {
-  display: flex;
-  float: right;
-  width: 50vw;
-  margin-bottom: 4vw;
-  margin-right: 6vw;
+  position: absolute;
+  top: 19vw;
+  right: 1vw;
+  width: 55vw;
+  height: 10vw;
 }
 
 #Message {

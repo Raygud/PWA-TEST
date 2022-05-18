@@ -4,8 +4,6 @@
     text-align: center;
     text-decoration: none;
     border: none;
-    color: white;
-    font-family: HeaderFont;
 }
 
 body{
@@ -107,7 +105,7 @@ h1{
 
 #Buttons{
     position: absolute;
-    bottom: 2vw;
+    bottom: 5vw;
     width: 100vw;
     display: flex;
         justify-content: space-evenly;
@@ -128,7 +126,12 @@ h1{
 
 #PromptContainer{
     position: absolute;
-    bottom: 24vw;
+    bottom: 23vw;
+    text-align: center;
+    width: 100vw;
+    height: 30vw;
+    color: white;
+    font-family: HeaderFont;
 }
 #Question{
     margin: auto;

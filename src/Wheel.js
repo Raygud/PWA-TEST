@@ -12,11 +12,7 @@ let SecretState = true
 let MenuState = false
 let UserTurn = 0
 
-let Users = [{
-    Name: "Runi",
-    Lives: 3,
-    Mission: null
-}
+let Users = [
 ]
 let i = 1 // NR OF LIVES
 // 1-89 = Dare
@@ -45,11 +41,13 @@ function User() {
 }
 
 function AddPlayer() {
+
     Users.push({
         Name: UserNameAdd.value,
         Lives: 3,
         Mission: null
     })
+    UserNameAdd.value = ""
 }
 
 
@@ -73,8 +71,8 @@ function WheelSpin(UserTurn) {
             case (x < 143):
                 alert("Secret!")
                 document.body.style.backgroundColor = "rgb(19, 19, 19)"
-                SecretPopUp.style.transform = `scale(1) rotate(360deg)`
-
+                Users[UserTurn].Mission = "Kill all"
+                SecretAnimation()
                 break;
             case (x < 269):
                 Choice("Rather")
@@ -138,27 +136,34 @@ function ChickeSound() {
 }
 
 function SecretAnimation() {
-    if (Users[UserTurn].Mission == !null || Users[UserTurn].Mission) {
-        SecretPopUp.style.transform = `scale(1.25) rotate(360deg)`
+    if (Users.length > 0) {
 
-        if (SecretState = !SecretState) {
-            SecretPopUp.style.transform = `scale(0) rotate(-360deg)`
-            SecretPopUp.style.left = "-20vw"
-            SecretPopUp.style.top = "-15vw"
-            setTimeout(() => {
-                SecretPopUp.style.left = "20vw"
-                SecretPopUp.style.top = "55vw"
-            }, 510);
+        console.log(Users[UserTurn - 1].Name, Users[UserTurn - 1].Mission, Users[UserTurn - 1].Lives)
+        if (Users[UserTurn - 1].Mission != null) {
+            SecretPopUp.style.transform = `scale(1.25) rotate(360deg)`
 
+            if (SecretState = !SecretState) {
+                SecretPopUp.style.transform = `scale(0) rotate(-360deg)`
+                SecretPopUp.style.left = "-20vw"
+                SecretPopUp.style.top = "-15vw"
+                setTimeout(() => {
+                    SecretPopUp.style.left = "20vw"
+                    SecretPopUp.style.top = "55vw"
+                }, 510);
+
+            }
+            else {
+                SecretPopUp.style.transition = "0s"
+                SecretPopUp.style.transition = "500ms"
+                SecretPopUp.style.transform = `scale(1.25) rotate(360deg)`
+            }
         }
         else {
-            SecretPopUp.style.transition = "0s"
-            SecretPopUp.style.transition = "500ms"
-            SecretPopUp.style.transform = `scale(1.25) rotate(360deg)`
+            console.log("You Have no missions!")
         }
     }
     else {
-        alert(Users[UserTurn].Name + " has no mission!")
+        console.log("No Players!")
     }
 }
 
